@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Air Quality Sensors in Aberdeen</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+
+
+	
+</head>
+<body>
+
+
+
+<div id="mapid" style="width: 800px; height: 600px;"></div>
+<script>
+
+	var mymap = L.map('mapid').setView([57.151978, -2.134438], 13);
+
+	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox.streets'
+	}).addTo(mymap);
+/*
+	L.marker([57.1625,-2.1211425]).addTo(mymap)
+		.bindPopup("I am a <b>Community Sensor</b>.").openPopup();
+*/
+
+// Council sensors
+L.circle([57.141956, -2.091683], 50, {
+		color: 'green',
+		fillColor: '#0f3',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Council device");
+
+L.circle([57.134219, -2.093968], 50, {
+		color: 'green',
+		fillColor: '#0f3',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Council device");
+
+L.circle([57.144506, -2.106457], 50, {
+		color: 'green',
+		fillColor: '#0f3',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Council device");
+
+L.circle([57.157355, -2.094226], 50, {
+		color: 'green',
+		fillColor: '#0f3',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Council device");
+
+L.circle([57.169805, -2.095363], 50, {
+		color: 'green',
+		fillColor: '#0f3',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Council device");
+
+L.circle([57.128699, -2.125608], 50, {
+		color: 'green',
+		fillColor: '#0f3',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Council device");
+
+
+// Community sensors
+
+L.circle([57.1380,	-2.0770], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.1300,	-2.0870], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.1460,	-2.1140], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.1360,	-2.1070], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.1360,	-2.1070], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([56.9630,	-2.2110], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.1250,	-2.1020], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.4560,	-2.3770], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.1060,	-2.0880], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.1500,	-2.1670], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.3896,	-2.468168], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([56.9640,	-2.2120], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.1110,	-2.2390], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.1625,	-2.1211425], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.1901,	-2.2816], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.4974,	-1.9113], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.1585,	-2.10694], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.1720,	-2.134], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+L.circle([57.5476,	-2.0233], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.2688,	-2.187987], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.1500,	-2.1080], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.1496,	-2.1336], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.2037111,	-2.2910411], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.1746412,	-2.1151751], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.1738956, -2.1149393], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.1720473, -2.1252005], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+
+L.circle([57.1780, -2.0920], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Community Sensor");
+/*
+	L.polygon([
+		[57.400, -2.13],
+		[51.404, -2.135],
+		[51.407, -2.145]
+	]).addTo(mymap).bindPopup("I am a polygon.");
+*/
+
+	var popup = L.popup();
+
+	function onMapClick(e) {
+		popup
+			.setLatLng(e.latlng)
+			.setContent("You clicked the map at " + e.latlng.toString())
+			.openOn(mymap);
+	}
+
+	mymap.on('click', onMapClick);
+
+</script>
+
+
+
+</body>
+</html>
+
